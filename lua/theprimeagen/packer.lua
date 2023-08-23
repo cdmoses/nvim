@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
 		}
 	}
 
+    use 'shaunsingh/solarized.nvim'
 	-- use('jalvesaq/cmp-nvim-r')
 
 end)

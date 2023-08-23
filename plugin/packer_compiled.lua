@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/cdmoses/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-r"] = {
-    loaded = true,
-    path = "/Users/cdmoses/.local/share/nvim/site/pack/packer/start/cmp-nvim-r",
-    url = "https://github.com/jalvesaq/cmp-nvim-r"
-  },
   harpoon = {
     loaded = true,
     path = "/Users/cdmoses/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -144,6 +139,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cdmoses/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["solarized.nvim"] = {
+    loaded = true,
+    path = "/Users/cdmoses/.local/share/nvim/site/pack/packer/start/solarized.nvim",
+    url = "https://github.com/shaunsingh/solarized.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
