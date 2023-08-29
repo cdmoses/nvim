@@ -8,9 +8,17 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	})
 
-	use({ 'rose-pine/neovim', 
+    use {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+
+
+    use 'nvim-tree/nvim-web-devicons'
+
+	use({ 'rose-pine/neovim',
 	as = 'rose-pine',
-	config = function() 
+	config = function()
 		vim.cmd('colorscheme rose-pine')
 	end })
 
@@ -43,5 +51,11 @@ return require('packer').startup(function(use)
     use 'shaunsingh/solarized.nvim'
 	-- use('jalvesaq/cmp-nvim-r')
 
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
 end)
+
 
