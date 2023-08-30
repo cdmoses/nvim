@@ -56,6 +56,23 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
+    use({
+        "epwalsh/obsidian.nvim",
+        requires = {
+            -- Required.
+            "nvim-lua/plenary.nvim",
+
+            -- see below for full list of optional dependencies 👇
+        },
+        config = function()
+            require("obsidian").setup({
+                dir = "~/my-vault",
+
+                -- see below for full list of options 👇
+            })
+        end,
+    })
+
 end)
 
 
