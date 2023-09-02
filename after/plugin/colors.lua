@@ -1,2 +1,3 @@
 -- Load the colorscheme
-vim.cmd('colorscheme rose-pine')
+vim.cmd(let g:gruvbox_material_background = 'hard')
+vim.cmd('colorscheme gruvbox-material')

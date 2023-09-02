@@ -13,13 +13,18 @@ return require('packer').startup(function(use)
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     }
 
-
     use 'nvim-tree/nvim-web-devicons'
 
-	use({ 'rose-pine/neovim',
-	as = 'rose-pine',
+    use({ 'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+        vim.cmd('colorscheme rose-pine')
+    end })
+
+	use({ 'sainnhe/gruvbox-material',
+	as = 'gruvbox-material',
 	config = function()
-		vim.cmd('colorscheme rose-pine')
+        vim.cmd('colorscheme gruvbox-material')
 	end })
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
